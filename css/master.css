@@ -1,3 +1,30 @@
+.debug .container {
+  height: 20vh;
+}
+
+.debug .container > [class^="col-"] {
+  height: 100%;
+  background: #ffc0cb;
+  border: 1px solid #000;
+  padding: 2px;
+  position: relative;
+}
+
+.debug .container > [class^="col-"] p,
+.debug .container > [class^="col-"] > [class^="col-"] p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.debug .container > [class^="col-"] > [class^="col-"]  {
+  height: 100%;
+  background: #f07f80;
+  border: 1px solid #ffc0cb;
+  position: relative;
+}
+
 * {
   margin: 0;
   padding: 0;
