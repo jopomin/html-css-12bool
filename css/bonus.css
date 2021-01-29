@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  height: 15vh;
+  background: #394eab;
+}
+
+.jumbotron {
+  height: 85vh;
+  background: #ab3967;
+}
+
+main {
+  height: 100vh;
+  background: orange;
+}
+
+.ft-content {
+  height: 50vh;
+  background: green;
+}
+
+.ft-signature {
+  height: 10vh;
+  background: darkred;
+}
+
+.col-offset-2 {
+  margin-left: calc((100% / 12) * 2);
+  border: none;
+}
+
+.debug [class^="col-"] {
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(0,0,0,0.2);
+  position: relative;
+}
+
+[class^="col-"] {
+  height: 100%;
+  position: relative;
+}
+
+[class^="col-"] p,
+[class^="col-"] a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#jpm-logo {
+  display: inline-block;
+  background-image: url('../img/jpm-w.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+/* .debug .container > [class^="col-"] {
+  height: 100%;
+  background: #ffc0cb;
+  border: 1px solid #000;
+  padding: 2px;
+  position: relative;
+}
+
+.debug .container > [class^="col-"] p,
+.debug .container > [class^="col-"] > [class^="col-"] p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.debug .container > [class^="col-"] > [class^="col-"]  {
+  height: 100%;
+  background: #f07f80;
+  border: 1px solid #ffc0cb;
+  position: relative;
+} */
