@@ -18,21 +18,19 @@
   height: 20vh;
 }
 
+[class^="col-"] {
+  height: 100%;
+  position: relative;
+}
+
 .container > [class^="col-"] {
-  height: 100%;
   padding: 2px;
-  position: relative;
 }
 
-.container > [class^="col-"] > [class^="col-"]  {
-  height: 100%;
-  position: relative;
-}
-
-.container > [class^="col-"] p,
-.container > [class^="col-"] > [class^="col-"] p {
+[class^="col-"] p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
